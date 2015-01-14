@@ -35,7 +35,7 @@
             if([nodeObject isKindOfClass:[NSDictionary class]]){
                 StructOfWebResource* webResource = [[StructOfWebResource alloc] init];
                 if([webResource initial:nodeObject]){
-                    [self.webResource addObject:nodeObject];
+                    [self.webResource addObject:webResource];
                 }else{
                     return NO;
                 }

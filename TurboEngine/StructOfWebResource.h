@@ -11,6 +11,7 @@
 @interface StructOfWebResource : NSObject
 
 @property (nonatomic, strong)NSString* zipUrl;
+@property (nonatomic, strong)NSString* zipSize;
 
 - (BOOL)initial:(NSDictionary* )dicWebResource;
 @end

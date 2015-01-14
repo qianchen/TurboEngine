@@ -8,13 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol WebResourceDownloadDelegate <NSObject>
+@interface WebResourceDownloadManger : NSObject
 
+- (void)startDownloadAllPackages;
 
-@end
-
-@interface WebResourceDownloadManger : NSObject<NSURLSessionDataDelegate, NSURLSessionDownloadDelegate>
-
-@property (strong, nonatomic)NSMutableArray* webResources;
-
+@property (nonatomic, copy) void (^progressHandle)(double progress);
+@property (nonatomic, copy) void (^completionHandle)();
+@property (nonatomic, copy) void (^failureHandle)(NSError* error);
 @end

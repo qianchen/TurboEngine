@@ -10,8 +10,9 @@
 
 @implementation StructOfWebResource
 
-- (BOOL)initial:(NSDictionary *)dicRegion{
-    self.zipUrl = [dicRegion objectForKey:@"zipUrl"];
+- (BOOL)initial:(NSDictionary *)dicWebResource{
+    self.zipUrl = [dicWebResource objectForKey:@"zipUrl"];
+    self.zipSize = [dicWebResource objectForKey:@"zipSize"];
     
     return true;
 }

@@ -1,0 +1,47 @@
+{
+    "center":
+     [
+	{
+            "regionID": "1001",
+            "regionName": "hangzhou",
+            "webResource": [
+                {
+                    "zipUrl": "http://127.0.0.1:7777/1.zip",
+                    "zipSize": "2677485997"
+                },
+                {
+                    "zipUrl": "http://127.0.0.1:7777/2.zip",
+                    "zipSize": "2677485997"
+                },
+                {
+                    "zipUrl": "http://127.0.0.1:7777/3.zip",
+                    "zipSize": "2677485997"
+                }
+            ],
+            "homePage": "/webcontent/index.html"
+        },
+        {
+            "regionID": "1002",
+            "regionName": "manila",
+            "webResource": [
+                {
+                    "zipUrl": "http://10.61.213.138:9080/TurboEngine/webcontent.zip",
+                    "zipSize": "5533940"
+                },
+                {
+                    "zipUrl": "http://10.61.213.138:9080/TurboEngine/webcontent.zip",
+                    "zipSize": "5533940"
+                },
+                {
+                    "zipUrl": "http://10.61.213.138:9080/TurboEngine/webcontent.zip",
+                    "zipSize": "5533940"
+                }
+            ],
+            "homePage": "/web/logon.html"
+        }
+    ],
+    "appconfig": {
+        "supportRotation": true,
+        "refreshTime": 30
+    }
+}
